@@ -1,9 +1,11 @@
+import cors from 'cors';
 import express from 'express';
 import type { AuthUser, KycStatus, KycStatusResponse } from '@mfe/shared-contracts';
 
 const PORT = 4175;
 const app = express();
 
+app.use(cors());
 app.use(express.json());
 
 const usersByToken: Record<string, AuthUser> = {

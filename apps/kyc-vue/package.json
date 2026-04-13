@@ -11,7 +11,6 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@mfe/mock-api": "workspace:*",
     "@mfe/shared-contracts": "workspace:*",
     "vue": "^3.5.11"
   },
