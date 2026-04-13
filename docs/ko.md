@@ -817,3 +817,11 @@ pnpm --filter @mfe/mock-api dev
 - shared contracts는 타입 경계를 소유합니다
 
 이 분리가 이 샘플 구조의 핵심입니다.
+
+
+
+추가 문서:
+
+- [셸이 앱을 붙이는 방식 설명서](./mfe-shell-app-composition.md)
+  - 현재 코드의 `customElements` 기반 조합 방식 설명
+  - `mount()` API, Module Federation, iframe, MPA route handoff 방식 비교
