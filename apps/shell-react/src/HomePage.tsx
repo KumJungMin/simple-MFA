@@ -50,7 +50,7 @@ export function HomePage() {
         </p>
         <div className="shell-grid">
           <article className="shell-subcard">
-            <p className="shell-label">Mock API</p>
+            <p className="shell-label">Gateway API route</p>
             <strong>{runtime.apiBase}</strong>
           </article>
           <article className="shell-subcard">
@@ -112,10 +112,7 @@ export function HomePage() {
           <a className="shell-button shell-button-secondary" href="/?token=valid-token-user-002">
             Switch to user-002
           </a>
-          <a
-            className="shell-button shell-button-secondary"
-            href={`http://localhost:5174/?token=${encodeURIComponent(runtime.token)}`}
-          >
+          <a className="shell-button shell-button-secondary" href={`/mfe/kyc/?token=${encodeURIComponent(runtime.token)}`}>
             Open KYC standalone app
           </a>
         </div>

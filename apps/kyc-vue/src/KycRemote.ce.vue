@@ -7,7 +7,7 @@ const props = withDefaults(
     token?: string;
   }>(),
   {
-    apiBase: 'http://localhost:4175',
+    apiBase: '/api',
     token: 'valid-token-user-001'
   }
 );

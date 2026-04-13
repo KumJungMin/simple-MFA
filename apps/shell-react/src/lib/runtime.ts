@@ -22,10 +22,10 @@ export function getShellRuntime() {
   const query = readQueryParams();
 
   return {
-    apiBase: import.meta.env.VITE_API_BASE_URL ?? 'http://localhost:4175',
+    apiBase: import.meta.env.VITE_API_BASE_URL ?? '/api',
     kycRemoteUrl:
       import.meta.env.VITE_KYC_REMOTE_URL ??
-      (import.meta.env.DEV ? 'http://localhost:5174/src/remote.ts' : '/mfe/kyc/remote/kyc-app.js'),
+      (import.meta.env.DEV ? '/mfe/kyc/src/remote.ts' : '/mfe/kyc/remote/kyc-app.js'),
     query,
     token: query.token ?? DEFAULT_TOKEN
   };

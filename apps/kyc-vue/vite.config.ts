@@ -3,6 +3,7 @@ import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 
 export default defineConfig({
+  base: '/mfe/kyc/',
   plugins: [vue()],
   build: {
     rollupOptions: {
@@ -16,6 +17,7 @@ export default defineConfig({
     }
   },
   server: {
-    port: 5174
+    port: 5174,
+    strictPort: true
   }
 });

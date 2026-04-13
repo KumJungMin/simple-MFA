@@ -22,7 +22,7 @@ export function getStandaloneRuntime() {
   const query = readQueryParams();
 
   return {
-    apiBase: import.meta.env.VITE_API_BASE_URL ?? 'http://localhost:4175',
+    apiBase: import.meta.env.VITE_API_BASE_URL ?? '/api',
     query,
     token: query.token ?? DEFAULT_TOKEN
   };
