@@ -825,3 +825,8 @@ pnpm --filter @mfe/mock-api dev
 - [셸이 앱을 붙이는 방식 설명서](./mfe-shell-app-composition.md)
   - 현재 코드의 `customElements` 기반 조합 방식 설명
   - `mount()` API, Module Federation, iframe, MPA route handoff 방식 비교
+
+- [한 페이지에 여러 앱을 삽입하는 방식 이해하기](./ko/in-page-microfrontend-widgets.md)
+  - 페이지 일부를 독립 앱으로 조합하는 방식 설명
+  - `custom element`, `iframe`, 런타임 로딩의 차이
+  - 데이터 전달, `CustomEvent`, 성능/독립성 트레이드오프 정리
